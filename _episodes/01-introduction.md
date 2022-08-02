@@ -5,7 +5,7 @@ exercises: 0
 questions:
 - "Key question -- What is ADL/CL?"
 objectives:
-- "First learning objective. (FIXME)"
+- "First learning objective. "
 keypoints:
 - "First key point. Brief Answer to questions. (FIXME)"
 ---
