@@ -237,6 +237,15 @@ OPTIONAL: If you are familiar with analysis concepts, you can also try to add th
 > {: .solution}
 {: .challenge}
 
+### The complete analysis selection
+
+Now get the final version of the ADL file:
+~~~
+wget https://raw.githubusercontent.com/ADL4HEP/ADLAnalysisDrafts/main/CMS-B2G-16-024/CMS-B2G-16-024_step5.adl
+~~~
+{: .language-bash}
+This version adds a few more histograms from the paper drawn using auxiliary objects and regions which are not a part of the actual analysis selection.  Such histograms merely show object properties.  For example, the histogram ```hmAK8jet2b``` shows the mass of AK8jets with only subjet b-tagging but no explicit mass cut.  Study how that histogram was made.  Similarly, check the ```hWjetsm``` and ```hWjetstau21``` histograms.
+
 
 
 {% include links.md %}
