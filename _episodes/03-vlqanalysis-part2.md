@@ -52,12 +52,12 @@ The total number of events in the full list of datasets required for this analys
 
 However, we already ran the analysis on the full set of samples and obtained the output root files.  You can download the full set of output files by
 ~~~
-wget .....
-tar -xzvf ......
+wget https://www.dropbox.com/s/7yrz7cz9dlrxylv/CMS-B2G-16-024_histoouts.tgz
+tar -xzvf CMS-B2G-16-024_histoouts.tgz
 ~~~
 {: .language-bash}
 
-In the VLQrunresults directory, you will find a set of files with name
+In the CMS-B2G-16-024_histoouts directory, you will find a set of files with name
 ~~~
 histoOut-CMS-B2G-16-024_<samplename>.root
 ~~~
