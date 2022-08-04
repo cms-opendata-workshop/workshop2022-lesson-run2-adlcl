@@ -1,7 +1,7 @@
 ---
 title: "Installing CutLang"
-teaching: 10
-exercises: 15
+teaching: 0
+exercises: 20
 questions:
 - "How do I access information about CutLang in general?"
 - "How do I install CutLang via Docker?"
