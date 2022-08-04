@@ -28,19 +28,19 @@ This analysis works with several different types of objects and multiple event s
 
 The main reason behind this is that, when we write code using general purpose languages, we intertwine the physics algorithm with other technical details, e.g. accessing files, accessing variables, importing modules, etc.  Despite the flexibility, all such technicalities obscure the code.
 
-However there is another emerging alternative which allows to decouple physics algorithm from the technical code and write analyses with a simple, self-describing syntax.  **Analysis Description Language (ADL)** is a HEP-specific analysis language developed with this purpose. 
+However there is another emerging alternative which allows to decouple physics algorithm from the technical code and write analyses with a simple, self-describing syntax.  **Analysis Description Language (ADL)** is a HEP-specific analysis language developed with this purpose. Its main aim is to describe analyses in a more intuitive and physics-focused way.
 
 More formally, ADL is a declarative domain specific language (DSL) that describes the physics content of a HEP analysis in a standard and unambiguous way. 
 * External DSL: Custom-designed syntax to express analysis-specific concepts. Reflects conceptual reasoning of particle physicists.  Focus on physics, not on programming.
 * Declarative: Tells what to do, but not how to do it.
-* Easy to read: Clear, self-describing syntax rules.
+* Human readable: Clear, self-describing syntax rules.
 * Designed for everyone: experimentalists, phenomenologists, students, interested public…
 
 ADL is designed to be framework-independent. Any framework recognizing ADL can perform tasks with it.
-Decouples physics information from software / framework details.  This allows:
+Physics information becomes independent from software and framework details.  This allows:
 * Multi-purpose use of analysis description: Can be automatically translated or incorporated into the GPL / framework most suitable for a given purpose, e.g. exp, analysis, (re)interpretation, analysis queries, …
-* Easy communication between groups: experimentalists, phenomenologists, referees, students, public, …
-* Easy preservation of analysis physics logic.
+* Efficient communication between groups: experimentalists, phenomenologists, referees, students, public, …
+* Accessible preservation of analysis physics logic.
 
 ADL mainly focuses on describing *event processing*.  This includes object selections, event variable definitions and event selections.  It can also described histogramming, and partially systematic uncertainties.
 
