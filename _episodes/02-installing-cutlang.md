@@ -43,45 +43,45 @@ For linux/MacOS:
 ~~~
  docker run -p 8888:8888 -p 5901:5901 -p 6080:6080 -d -v $PWD/:/src --name CutLang-root-vnc cutlang/cutlang-root-vnc:latest 
 ~~~
-{: .bash}
+{: .language-bash}
 
 If you would like to re-run by mounting another directory, you should stop the container using
 ~~~
 docker stop CutLang-root-vnc && docker container rm CutLang-root-vnc
 ~~~
-{: .bash}
+{: .language-bash}
 
 and rerun with a different path as ```docker run -p 8888:8888 -p 5901:5901 -p 6080:6080 -d -v /path/you/want/:/src ...``` . 
 For example:
 ~~~
 docker run -p 8888:8888 -p 5901:5901 -p 6080:6080 -d -v ~/example_work_dir/:/src --name CutLang-root-vnc cutlang/cutlang-root-vnc:latest
 ~~~
-{: .bash}
+{: .language-bash}
 
 For Windows:
 ~~~
  docker run -p 8888:8888 -p 5901:5901 -p 6080:6080 -d -v %cd%/:/src --name CutLang-root-vnc cutlang/cutlang-root-vnc:latest
  ~~~
-{: .bash}
+{: .language-bash}
 
 If you would like to re-run by mounting another directory, you should stop the container using
 ~~~
 docker stop CutLang-root-vnc && docker container rm CutLang-root-vnc
 ~~~
-{: .bash}
+{: .language-bash}
 
 and rerun with a different path as ```docker run -p 8888:8888 -p 5901:5901 -p 6080:6080 -d -v /path/you/want/:/src ...``` . 
 For example:
 ~~~
 docker run -p 8888:8888 -p 5901:5901 -p 6080:6080 -d -v ~/example_work_dir/:/src --name CutLang-root-vnc cutlang/cutlang-root-vnc:latest
 ~~~
-{: .bash}
+{: .language-bash}
 
 3. Execute the container using
 ~~~
 docker exec -it CutLang-root-vnc bash
 ~~~
-{: .bash}
+{: .language-bash}
 
 If you have installed the container successfully, you will see
 ~~~
@@ -89,6 +89,7 @@ For examples see /CutLang/runs/
 and for LHC analysis implementations, see
 https://github.com/ADL4HEP/ADLLHCanalyses
 ~~~
+{: .output}
 
 Now, the container is ready to run CutLang.
 
@@ -96,7 +97,7 @@ You can leave the container by typing
 ~~~
 exit
 ~~~
-{: .bash}
+{: .language-bash}
 
 
 ### Update (if relevant)
@@ -106,7 +107,7 @@ docker pull cutlang/cutlang-root-vnc:latest # install the latest image
 docker stop CutLang-root-vnc && docker container rm CutLang-root-vnc
 docker run -p 8888:8888 -p 5901:5901 -p 6080:6080 -d -v $PWD/:/src --name CutLang-root-vnc cutlang/cutlang-root-vnc
 ~~~
-{: .bash}
+{: .language-bash}
 
 ### Remove
 
@@ -116,7 +117,7 @@ docker stop CutLang-root-vnc
 docker ps -a | grep "CutLang-root-vnc" | awk '{print $1}' | xargs docker rm
 docker images -a | grep "cutlang-root-vnc" | awk '{print $3}' | xargs docker rmi
 ~~~
-{: .bash}
+{: .language-bash}
 
 ## Starting VNC and Jupyter
 ### Starting VNC
@@ -125,7 +126,7 @@ docker images -a | grep "cutlang-root-vnc" | awk '{print $3}' | xargs docker rmi
 ~~~
 start_vnc
 ~~~
-{: .bash}
+{: .language-bash}
 You will see
 ~~~
 VNC connection points:
@@ -143,7 +144,7 @@ Before leaving the container, please stop vnc using the command
 ~~~
 stop_vnc
 ~~~
-{: .bash}
+{: .language-bash}
 
 ## Starting Jupyter
 ### Starting Jupyter
@@ -154,7 +155,7 @@ Once in the container, type the command
 ~~~
 CLA_Jupyter lab
 ~~~
-{: .bash}
+{: .language-bash}
 
 If all went well, you will see an output whose last few lines look as follows:
 ~~~
@@ -175,7 +176,7 @@ In the CutLang Docker container, type
 ~~~
 CLA
 ~~~
-{: .bash}
+{: .language-bash}
 
 If all went well, you will see the following output:
 ~~~
@@ -233,7 +234,7 @@ Now, run CutLang with the folloing command:
 ~~~
 CLA root://eospublic.cern.ch//eos/opendata/cms/upload/POET/23-Jul-22/RunIIFall15MiniAODv2_TprimeTprime_M-800_TuneCUETP8M1_13TeV-madgraph-pythia8_flat.root POET -i /CutLang/runs/CMSOD-hello-world.adl -e 10000
 ~~~
-{: .bash}
+{: .language-bash}
 
 WARNING: Please ignore the file does not exist message saying ```root://eospublic.cern.ch//eos/opendata/cms/upload/POET/23-Jul-22/RunIIFall15MiniAODv2_TprimeTprime_M-800_TuneCUETP8M1_13TeV-madgraph-pythia8_flat.root does not exist.```
 
@@ -278,7 +279,7 @@ Start VNC, if you have not already done so.  Then open the root file and run a `
 root -l histoOut-CMSOD-hello-world.root
 new TBrowser
 ~~~
-{: .bash}
+{: .language-bash}
 Go to your web browser, where you should see the TBrowser open.  Click on the ```histoOut-CMSOD-hello-world.root``` file, then on the ```preselection``` directory.  
 
 You will see the histograms you made in the preselection directory.  Click on each histogram and look at the content.
