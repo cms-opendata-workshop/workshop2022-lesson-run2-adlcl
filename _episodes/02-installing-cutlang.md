@@ -41,7 +41,7 @@ We have prepared a CutLang docker container which functions similarly to other c
 
 For linux/MacOS:
 ~~~
- docker run -p 8888:8888 -p 5901:5901 -p 6080:6080 -d -v $PWD/:/src --name CutLang-root-vnc cutlang/cutlang-root-vnc:latest # download image and run container in current directory from downloaded image
+ docker run -p 8888:8888 -p 5901:5901 -p 6080:6080 -d -v $PWD/:/src --name CutLang-root-vnc cutlang/cutlang-root-vnc:latest 
 ~~~
 {: .bash}
 
@@ -51,7 +51,7 @@ docker stop CutLang-root-vnc && docker container rm CutLang-root-vnc
 ~~~
 {: .bash}
 
-and rerun with a different path as ```docker run -p 8888:8888 -p 5901:5901 -p 6080:6080 -d -v /path/to/you/want/:/src ...``` . 
+and rerun with a different path as ```docker run -p 8888:8888 -p 5901:5901 -p 6080:6080 -d -v /path/you/want/:/src ...``` . 
 For example:
 ~~~
 docker run -p 8888:8888 -p 5901:5901 -p 6080:6080 -d -v ~/example_work_dir/:/src --name CutLang-root-vnc cutlang/cutlang-root-vnc:latest
@@ -70,7 +70,7 @@ docker stop CutLang-root-vnc && docker container rm CutLang-root-vnc
 ~~~
 {: .bash}
 
-and rerun with a different path as ```docker run -p 8888:8888 -p 5901:5901 -p 6080:6080 -d -v /path/to/you/want/:/src ...``` . 
+and rerun with a different path as ```docker run -p 8888:8888 -p 5901:5901 -p 6080:6080 -d -v /path/you/want/:/src ...``` . 
 For example:
 ~~~
 docker run -p 8888:8888 -p 5901:5901 -p 6080:6080 -d -v ~/example_work_dir/:/src --name CutLang-root-vnc cutlang/cutlang-root-vnc:latest
@@ -110,7 +110,7 @@ docker run -p 8888:8888 -p 5901:5901 -p 6080:6080 -d -v $PWD/:/src --name CutLan
 
 ### Remove
 
-The CutLang docker container and image can be revomed using
+The CutLang docker container and image can be removed using
 ~~~
 docker stop CutLang-root-vnc
 docker ps -a | grep "CutLang-root-vnc" | awk '{print $1}' | xargs docker rm
