@@ -1,7 +1,7 @@
 ---
 title: "Vector-like quark analysis with ADL/CutLang: Part 1: Analysis algorithm, local runs, shape comparisons"
-teaching: 20
-exercises: 60
+teaching: 10
+exercises: 30
 questions:
 - "What is the general flow for the analysis?"
 - "What are the selection requirements?"
