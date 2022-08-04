@@ -14,7 +14,7 @@ objectives:
 
 ## Datasets
 So far, we have been running only on signal events.  We also have data events and simulated standard model background events to be used with this analysis.
-All events are listed in ................ file.
+All events are listed in [this file](https://github.com/cms-opendata-workshop/workshop2022-lesson-run2-adlcl/blob/gh-pages/data/CMS-B2G-16-024_POETsamples.txt).
 
 To access these files, write the filename as 
 ~~~
@@ -66,6 +66,50 @@ histoOut-CMS-B2G-16-024_<samplename>.root
 We will use these files in the remaining exercises.
 
 ## Produce plots comparing distribution shapes 
+
+We will compare shapes of various distributions obtained in different regions.  Shape comparison means that all histograms that are compared are normalized to the same quantity, e.g. 1.  
+
+We will use PyROOT commands through a Jupyter notebook.
+
+In your CutLang docker container:
+~~~
+cd /CutLang/binder
+CLA_Jupyter lab
+~~~
+{: .language-bash}
+
+Then, as described earlier, copy the last html link to a browser window, which will open the Jupyter interface.
+
+In the left panel, open the notebook ```ROOTshapecomparison.ipynb``` by double-clicking on it.
+The notebook has instructions.  Follow them to draw shape comparison plots.  Use the various ```histouout...root``` files from the ```CMS-B2G-16-024_histoouts``` directory.
+
+> Make sure that the paths of input ROOT files in the notebook match to the location of your own files!
+{: .warning}
+
+> ### Challenge: Playing with plots
+> * Can you try comparing shapes between other processes?  Different backgrounds?  Different signals?
+> * Can you compare shapes of ```cutflow``` histograms in various regions?
+> 
+{: .challenge}
+
+## Produce plots showing data, simulated MC and signals
+
+In a real analysis, we usually compare data with simulated samples (such as figs 3,4,5,6,7,8 in the paper).  Signal samples are also overlaid.  Once the background estimation is performed, final distributions in signal regions are plotted, showing data and estimated backgrounds (e.g. figs 9, 10).  In this last part, we will draw such plots.  Of course, since we did not perform data-driven background estimation, we will simply use the simulated MC histograms for the backgrounds.
+
+Execute the following in your CutLang docker container
+~~~
+cd /CutLang/
+wget https://www.dropbox.com/s/0xbkkx3g5kksizo/model_VLQ.tgz
+tar -xzvf model_VLQ.tgz
+cd model_VLQ
+python plotAll.py
+~~~
+{: .language-bash}
+
+That's it!  Now you will see plenty of ```.png``` figures appearing.  We can view these plots with the help of ```TBrowser```.  Simply execute ```root -l``` in the same directory and start a TNrowser by ```new TBrowser```.  You will see all figures in the TBrowser filesystem.  Just click on the plot you would like to view.
+
+How do the plots compare to those in the paper?
+
 
 
 
