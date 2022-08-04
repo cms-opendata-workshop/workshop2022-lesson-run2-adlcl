@@ -78,6 +78,7 @@ docker run -p 8888:8888 -p 5901:5901 -p 6080:6080 -d -v ~/example_work_dir/:/src
 {: .language-bash}
 
 3. Execute the container using
+
 ~~~
 docker exec -it CutLang-root-vnc bash
 ~~~
