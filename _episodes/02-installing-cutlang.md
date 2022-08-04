@@ -271,6 +271,22 @@ end CLA single
 ~~~
 {: .output}
 
+> **OPTIONAL:** Copying events file to local
+> 
+> If you are connecting from outside CERN, it may take a while, e.g. several minutes for CutLang to access the file and start processing events.  To make things faster, > you can alternatively copy the events file to your local directory and run on this local file.
+> 
+> You can copy the file using the ```xrtdcp``` command
+> ~~~
+> xrdcp root://eospublic.cern.ch//eos/opendata/cms/upload/POET/23-Jul-22/RunIIFall15MiniAODv2_TprimeTprime_M-800_TuneCUETP8M1_13TeV-madgraph-pythia8_flat.root .
+> ~~~
+> {: .language-bash}
+> then run CutLang as
+> ~~~
+> CLA RunIIFall15MiniAODv2_TprimeTprime_M-800_TuneCUETP8M1_13TeV-madgraph-pythia8_flat.root POET -i /CutLang/runs/CMSOD-hello-world.adl -e 10000
+> ~~~
+> {: .language-bash}
+> {: .testimonial}
+
 Look at this output and try to understand what happened during the event selection.
 
 You should also get an output ROOT file ```histoOut-CMSOD-hello-world.root``` that contains the histograms you made and some further information.
@@ -294,6 +310,7 @@ Congratulations! Now you are ready to run ADL analyses via CutLang!
 Also note that we have a large number of ADL files:
  * Example ADL files instructing how to write ADL syntax: ```ls /CutLang/runs/*.adl```
  * ADL files for various full LHC analyses (focusing on signal region selections): https://github.com/ADL4HEP/ADLLHCanalyses
+
 
 
 {% include links.md %}
