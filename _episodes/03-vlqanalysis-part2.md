@@ -1,7 +1,7 @@
 ---
 title: "Vector-like quark analysis with ADL/CutLang: Part 1: Analysis algorithm, local runs, shape comparisons"
-teaching: 20
-exercises: 60
+teaching: 10
+exercises: 15
 questions:
 - "How do I produce plots comparing distribution shapes for signal(s) and background(s)?"
 - "How do I produce plots showing data, along with simulated samples of signals and SM backgrounds normalized to analysis integrated luminosity?"
