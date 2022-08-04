@@ -237,6 +237,12 @@ OPTIONAL: If you are familiar with analysis concepts, you can also try to add th
 > {: .solution}
 {: .challenge}
 
+The following graph shows how the analysis looks after step4.  Red ellipses are the input objects, blue ellipses are the derived objects, and green rectangles are the regions.  Blue arrows show object dependencies, green arrows show region dependencies, and gray arrows show which objects have been used in which region.
+
+![](../fig/CMS-B2G-16-024_graph.png)
+
+Actually, this graph was generated directly from the ADL file itself, using a graphviz application!
+
 ### The complete analysis selection
 
 Now get the final version of the ADL file:
