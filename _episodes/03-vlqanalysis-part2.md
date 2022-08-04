@@ -10,6 +10,10 @@ objectives:
 - Run the full analysis selection locally on CutLang on limited number of signal and background events.
 - Produce plots comparing distribution shapes for signal(s) and background(s) using PyROOT scripting and Jupyter.
 - Produce plots showing data, along with simulated samples of signals and SM backgrounds normalized to analysis integrated luminosity" 
+
+keypoints:
+- "In a HEP analysis, we usually see two types of plots: distribution shape comparisons between different processes (normalized to a constant, e.g. 1), and plots showing data, backgrounds and signals (normalized to integrated luminosity). "
+- "Once an ADL analysis is run by CutLang, the output files can be analyzed with simple ROOT scripts to obtain both types of plots."
 ---
 
 ## Datasets
@@ -109,6 +113,12 @@ python plotAll.py
 That's it!  Now you will see plenty of ```.png``` figures appearing.  We can view these plots with the help of ```TBrowser```.  Simply execute ```root -l``` in the same directory and start a TNrowser by ```new TBrowser```.  You will see all figures in the TBrowser filesystem.  Just click on the plot you would like to view.
 
 How do the plots compare to those in the paper?
+
+## The end -- or is it?
+
+Congratulations! You have finished the exercise.  We hope you enjoyed writing analyses with ADL and find it useful.  We encourage to test this approach in your own studies.  We are always happy to hear your suggestions and answer your questions! 
+
+Your instructors: *Sezen Sekmen, Gokhan Unel, Burak Sen*
 
 
 
