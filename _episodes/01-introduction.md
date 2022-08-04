@@ -24,7 +24,7 @@ LHC data analyses are usually performed using complex analysis frameworks writte
 
 ![](../fig/CMS-SUS-21-002_graph.png)
 
-This analysis works with several different types of objects and multiple event selection regions, some of which are dependent on each other.  When we write such an analysis with a general purpose language, it becomes increasingly harder to visualize and keep track of the physics algorithm details.  As the analysis physics content becomes more complex, analysis code will become more complicated, and code becomes harder to follow.
+This analysis works with several different types of objects and multiple event selection regions, some of which are dependent on each other.  When we write such an analysis with a general purpose language, it becomes increasingly harder to visualize and keep track of the physics algorithm details.  As the analysis physics content becomes more intricate, analysis code will become more complex, and harder to follow.
 
 The main reason behind this is that, when we write code using general purpose languages, we intertwine the physics algorithm with other technical details, e.g. accessing files, accessing variables, importing modules, etc.  Despite the flexibility, all such technicalities obscure the code.
 
