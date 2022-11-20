@@ -376,7 +376,7 @@ CLA T2tt_700_50.root DELPHES -i /CutLang/runs/tutorials/ex12_counts.adl
 ~~~
 {: .language-bash}
 
-More ADL files for various full LHC analyses (focusing on signal region selections) can be found here: https://github.com/ADL4HEP/ADLLHCanalyses
+More ADL files for various full LHC analyses (focusing on signal region selections) can be found [in this git repository](https://github.com/ADL4HEP/ADLLHCanalyses).
 
 
 {% include links.md %}
