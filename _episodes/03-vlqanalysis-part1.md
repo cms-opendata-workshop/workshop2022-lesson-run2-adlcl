@@ -114,8 +114,8 @@ Now let's make some changes in the ADL file.
 >
 > Please complete the object selection by adding the following cuts:
 >
-> * To the ```muonsH``` object, add muon pT > 47 and muon |eta| < 2.1 cuts.
-> * To the ```muonsWtight``` object, add muon pT > 40 and muon |eta| < 2.4 cuts.
+> * To the ```muonsH``` object, add muon pT > 47 and muon absolute value of eta < 2.1 cuts.
+> * To the ```muonsWtight``` object, add muon pT > 40 and muon absolute value of eta < 2.4 cuts.
 > * To the ```Hcands``` object, add an AK8 jet pT > 300 cut.
 > 
 > > ### Solution
