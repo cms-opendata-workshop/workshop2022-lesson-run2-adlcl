@@ -99,7 +99,7 @@ Open ```CMS-B2G-16-024_step1.adl``` using ```nano``` or ```vi``` and explore the
 
 Let's first run the ADL file as it is:
 ~~~
-CLA root://eospublic.cern.ch//eos/opendata/cms/upload/POET/23-Jul-22/RunIIFall15MiniAODv2_TprimeTprime_M-800_TuneCUETP8M1_13TeV-madgraph-pythia8_flat.root POET -i CMS-B2G-16-024_step1.adl -e 20000
+CLA root://eospublic.cern.ch//eos/opendata/cms/derived-data/POET/23-Jul-22/RunIIFall15MiniAODv2_TprimeTprime_M-800_TuneCUETP8M1_13TeV-madgraph-pythia8_flat.root POET -i CMS-B2G-16-024_step1.adl -e 20000
 ~~~
 {: .language-bash}
 We are running over a signal sample which consists of TT production for T mass of 800 GeV.
