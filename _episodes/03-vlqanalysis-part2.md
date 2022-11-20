@@ -22,11 +22,11 @@ All events are listed in [this file](https://github.com/cms-opendata-workshop/wo
 
 To access these files, write the filename as 
 ~~~
-root://eospublic.cern.ch//eos/opendata/cms/upload/POET/23-Jul-22/<filename>
+root://eospublic.cern.ch//eos/opendata/cms/derived-data/POET/23-Jul-22/<filename>
 ~~~
 e.g., for TT+jets:
 ~~~
-root://eospublic.cern.ch//eos/opendata/cms/upload/POET/23-Jul-22/RunIIFall15MiniAODv2_TT_TuneCUETP8M1_13TeV-powheg-pythia8_flat.root
+root://eospublic.cern.ch//eos/opendata/cms/derived-data/POET/23-Jul-22/RunIIFall15MiniAODv2_TT_TuneCUETP8M1_13TeV-powheg-pythia8_flat.root
 ~~~
 
 
@@ -39,12 +39,12 @@ wget https://raw.githubusercontent.com/ADL4HEP/ADLAnalysisDrafts/main/CMS-B2G-16
 
 Run this ADL file with CutLang using the VLQ TTm800 signal file on 100000 events.  If you want, you can pipe the output into a text file for comparisons with other datasets, by adding ```>& TT80.txt``` to the end of the run command.
 ~~~
-CLA root://eospublic.cern.ch//eos/opendata/cms/upload/POET/23-Jul-22/RunIIFall15MiniAODv2_TprimeTprime_M-800_TuneCUETP8M1_13TeV-madgraph-pythia8_flat.root POET -i CMS-B2G-16-024_step1.adl -e 100000
+CLA root://eospublic.cern.ch//eos/opendata/cms/derived-data/POET/23-Jul-22/RunIIFall15MiniAODv2_TprimeTprime_M-800_TuneCUETP8M1_13TeV-madgraph-pythia8_flat.root POET -i CMS-B2G-16-024_step1.adl -e 100000
 ~~~
 
 You can also run on SingleMuon collision data:
 ~~~
-CLA root://eospublic.cern.ch//eos/opendata/cms/upload/POET/23-Jul-22/Run2015D_SingleMuon_flat.root POET -i CMS-B2G-16-024_step1.adl -e 100000
+CLA root://eospublic.cern.ch//eos/opendata/cms/derived-data/POET/23-Jul-22/Run2015D_SingleMuon_flat.root POET -i CMS-B2G-16-024_step1.adl -e 100000
 ~~~
 
 How do selection efficiencies compare for VLQ TT800 signal, tt+jets and data?  
