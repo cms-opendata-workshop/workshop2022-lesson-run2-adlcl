@@ -329,10 +329,12 @@ Please first look into each file and understand the algorithm and syntax.  Then 
 CLA ttjets_NANOAOD.root CMSNANO -i /CutLang/runs/tutorials/ex01_selection.adl
 ~~~
 {: .language-bash}
+
 ~~~
 CLA ttjets_NANOAOD.root CMSNANO -i /CutLang/runs/tutorials/ex02_histograms.adl
 ~~~
 {: .language-bash}
+
 ~~~
 CLA mc_105986.ZZ.root ATLASOD -i /CutLang/runs/tutorials/ex03_objreco.adl
 ~~~
