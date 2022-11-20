@@ -320,6 +320,7 @@ wget https://www.dropbox.com/s/ggi78bi4b6fv3r7/ttjets_NANOAOD.root
 wget http://opendata.atlas.cern/release/samples/MC/mc_105986.ZZ.root
 wget https://www.dropbox.com/s/zza28peyjy8qgg6/T2tt_700_50.root
 ~~~
+{: .language-bash}
 The samples contain ttjets events in CMSNANO format, ZZto4lepton events in ATLASOD format and SUSY events in DELPHES format, respectively,
 
 Please first look into each file and understand the algorithm and syntax.  Then run the ADL files with the commands given below.  If there are histograms made, check out the resulting ROOT file and inspect the histograms.
@@ -327,39 +328,51 @@ Please first look into each file and understand the algorithm and syntax.  Then 
 ~~~
 CLA ttjets_NANOAOD.root CMSNANO -i /CutLang/runs/tutorials/ex01_selection.adl
 ~~~
+{: .language-bash}
 ~~~
 CLA ttjets_NANOAOD.root CMSNANO -i /CutLang/runs/tutorials/ex02_histograms.adl
 ~~~
+{: .language-bash}
 ~~~
 CLA mc_105986.ZZ.root ATLASOD -i /CutLang/runs/tutorials/ex03_objreco.adl
 ~~~
+{: .language-bash}
 ~~~
 CLA ttjets_NANOAOD.root CMSNANO -i /CutLang/runs/tutorials/ex04_syntaxes.adl
 ~~~
+{: .language-bash}
 ~~~
 CLA T2tt_700_50.root DELPHES -i /CutLang/runs/tutorials/ex05_functions.adl
 ~~~
+{: .language-bash}
 ~~~
 CLA T2tt_700_50.root DELPHES -i /CutLang/runs/tutorials/ex06_bins.adl
 ~~~
+{: .language-bash}
 ~~~
 CLA ttjets_NANOAOD.root CMSNANO -i /CutLang/runs/tutorials/ex07_chi2optimize.adl
 ~~~
+{: .language-bash}
 ~~~
 CLA ttjets_NANOAOD.root CMSNANO -i /CutLang/runs/tutorials/ex08_objloopsreducers.adl
 ~~~
+{: .language-bash}
 ~~~
 CLA ttjets_NANOAOD.root CMSNANO -i /CutLang/runs/tutorials/ex09_sort.adl
 ~~~
+{: .language-bash}
 ~~~
 CLA ttjets_NANOAOD.root CMSNANO -i /CutLang/runs/tutorials/ex10_tableweight.adl
 ~~~
+{: .language-bash}
 ~~~
 CLA ttjets_NANOAOD.root CMSNANO -i /CutLang/runs/tutorials/ex11_printsave.adl 
 ~~~
+{: .language-bash}
 ~~~
 CLA T2tt_700_50.root DELPHES -i /CutLang/runs/tutorials/ex12_counts.adl
 ~~~
+{: .language-bash}
 
 More ADL files for various full LHC analyses (focusing on signal region selections) can be found here: https://github.com/ADL4HEP/ADLLHCanalyses
 
