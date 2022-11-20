@@ -106,7 +106,7 @@ exit
 ### Update (if relevant)
 In case an update is necessary, you can perform the update as follows:
 ~~~
-docker pull cutlang/cutlang-root-vnc:latest # install the latest image
+docker pull cutlang/cutlang-root-vnc:latest
 docker stop CutLang-root-vnc && docker container rm CutLang-root-vnc
 docker run -p 8888:8888 -p 5901:5901 -p 6080:6080 -d -v $PWD/:/src --name CutLang-root-vnc cutlang/cutlang-root-vnc
 ~~~
