@@ -284,7 +284,7 @@ end CLA single
 > {: .language-bash}
 > then run CutLang as
 > ~~~
-> CLA RunIIFall15MiniAODv2_TprimeTprime_M-800_TuneCUETP8M1_13TeV-madgraph-pythia8_flat.root POET -i /CutLang/runs/toturials/ex00_helloworld.adl -e 10000
+> CLA RunIIFall15MiniAODv2_TprimeTprime_M-800_TuneCUETP8M1_13TeV-madgraph-pythia8_flat.root POET -i /CutLang/runs/tutorials/ex00_helloworld.adl -e 10000
 > ~~~
 > {: .language-bash}
 > {: .testimonial}
